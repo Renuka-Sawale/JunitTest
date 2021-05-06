@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class TestFirstName {
     @Test
     public void firstNameTest() {
-        FirstName firstName = new FirstName();
+        UserRegistractionCheck firstName = new UserRegistractionCheck();
         boolean result = firstName.firstNameTest();
         Assertions.assertEquals(true,result);
     }
