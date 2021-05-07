@@ -22,6 +22,13 @@ public class TestFirstName {
         boolean result = userRegistractionCheck.emailTest("reenusurya11@gmail.com");
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void phoneNo() {
+        UserRegistractionCheck userRegistractionCheck = new UserRegistractionCheck();
+        boolean result = userRegistractionCheck.phoneNoTest("91810423232323");
+        Assertions.assertFalse(result);
+    }
 }
 
 
