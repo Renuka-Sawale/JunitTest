@@ -5,15 +5,15 @@ public class TestFirstName {
     @Test
     public void firstNameTest() {
         UserRegistractionCheck userRegistractionCheck = new UserRegistractionCheck();
-        boolean result = userRegistractionCheck.firstNameTest();
-        Assertions.assertEquals(true,result);
+        boolean result = userRegistractionCheck.firstNameTest("Renuka");
+        Assertions.assertTrue(result);
     }
 
     @Test
     public void lastNameTest() {
         UserRegistractionCheck userRegistractionCheck = new UserRegistractionCheck();
-        boolean result = userRegistractionCheck.lastNameTest();
-        Assertions.assertEquals(true,result);
+        boolean result = userRegistractionCheck.lastNameTest("Sawale");
+        Assertions.assertTrue(result);
     }
 }
 
