@@ -29,6 +29,13 @@ public class TestFirstName {
         boolean result = userRegistractionCheck.phoneNoTest("91810423232323");
         Assertions.assertFalse(result);
     }
+
+    @Test
+    public void password() {
+        UserRegistractionCheck userRegistractionCheck = new UserRegistractionCheck();
+        boolean result = userRegistractionCheck.passwordTest("rrstpa@1234");
+        Assertions.assertFalse(result);
+    }
 }
 
 
