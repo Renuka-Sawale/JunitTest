@@ -15,6 +15,13 @@ public class TestFirstName {
         boolean result = userRegistractionCheck.lastNameTest("Sawale");
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void emailTest() {
+        UserRegistractionCheck userRegistractionCheck = new UserRegistractionCheck();
+        boolean result = userRegistractionCheck.emailTest("reenusurya11@gmail.com");
+        Assertions.assertTrue(result);
+    }
 }
 
 
